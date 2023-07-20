@@ -1,46 +1,39 @@
 {
-  "name": "myblogs",
-  "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "deployee": "bash deploy_gitee.sh"
   },
   "dependencies": {
-    "axios": "^1.3.6",
-    "core-js": "^3.8.3",
-    "view-design": "^4.7.0",
-    "vue": "^2.6.14",
-    "vue-router": "^3.5.2"
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
+    "@vuepress-reco/vuepress-plugin-rss": "^1.0.2",
+    "@vuepress/plugin-google-analytics": "1.2.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.2",
+    "@vuepress/plugin-nprogress": "^1.4.0",
+    "@vuepress/plugin-pwa": "1.2.0",
+    "@vuepress/plugin-register-components": "1.2.0",
+    "axios": "^0.19.0",
+    "jquery": "^3.5.0",
+    "moment": "^2.24.0",
+    "vuepress": "^1.9.9",
+    "vuepress-plugin-boxx": "0.0.7",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-container": "^2.1.3",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-flowchart": "1.4.3",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-reading-progress": "^1.0.8",
+    "vuepress-plugin-sitemap": "2.3.0",
+    "vuepress-plugin-smooth-scroll": "0.0.9",
+    "vuepress-plugin-social-share": "^0.3.1",
+    "vuepress-theme-reco": "1.2.2",
+    "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vuepress/plugin-medium-zoom": "^1.0.2",
+    "vuepress-plugin-auto-sidebar": "^1.4.1",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-dynamic-title": "^1.0.0"
+  }
 }
