@@ -1,16 +1,16 @@
 #!/usr/bin/env sh
  
-# ȷ���ű��׳������Ĵ���
+# 确保脚本抛出遇到的错误
 set -e
  
-# ���ɾ�̬�ļ� , yarn docs:build
+# 生成静态文件, yarn docs:build
 npm run docs:build
 rm -rf ../blog/dist/*
 
 # ��build���ɵ�distĿ¼��������һ��Ŀ¼��
 cp -rf dist ../blog/
 
-# �������ɵ��ļ���
+# 进入生成的文件夹
 cd ../blog/dist
 
 # git��ʼ����ÿ�γ�ʼ����Ӱ������
